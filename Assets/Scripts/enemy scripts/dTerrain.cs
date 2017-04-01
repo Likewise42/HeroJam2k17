@@ -5,7 +5,6 @@ using UnityEngine;
 public class dTerrain : MonoBehaviour {
 
     void OnTriggerEnter(Collider other) {
-        Debug.Log("collide");
         if (other.tag == "coin") {
             Destroy(gameObject);
         }
