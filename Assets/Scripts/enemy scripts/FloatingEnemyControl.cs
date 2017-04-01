@@ -37,5 +37,12 @@ public class FloatingEnemyControl : MonoBehaviour {
         controller.Move(moveVector * Time.deltaTime);
     }
 
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "coin")
+        {
+            Destroy(gameObject);
+        }
+    }
 
 }

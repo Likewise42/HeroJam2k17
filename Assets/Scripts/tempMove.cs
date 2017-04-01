@@ -1,8 +1,8 @@
-﻿using UnityEngine;
-using System.Collections;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
-public class MoveControls : MonoBehaviour {
-
+public class tempMove : MonoBehaviour {
     public float moveSpeed;
     private float inputDirection; //X Value of moveVector
     private float verticalVelocity; //Y Value of moveVector
@@ -17,16 +17,12 @@ public class MoveControls : MonoBehaviour {
     public bool dashReplenish;
     public bool dashing;
     public bool dead;
-    public bool haveCoin;
-    public float coinCooldown;
-    public float coinCooldownMax;
-    public bool facingRight;
-    public GameObject coin;
+    private bool facingRight;
     private Vector3 moveVector;
     private CharacterController controller;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
         controller = GetComponent<CharacterController>();
         gravity = 1.0f;
         jump = 20;
@@ -35,26 +31,16 @@ public class MoveControls : MonoBehaviour {
         dashing = false;
         dashReplenish = false;
         dashPower = true;
-        haveCoin = true;
     }
 	
 	// Update is called once per frame
 	void Update () {
-
         inputDirection = Input.GetAxis("Horizontal") * moveSpeed;
 
-        if(inputDirection > 0)
-        {
-            facingRight = true;
-        }else
-        {
-            facingRight = false;
-        }
-
         //Switching Powers
-        if(Input.GetKeyUp(KeyCode.Space))
+        if (Input.GetKeyUp(KeyCode.Space))
         {
-            if(dashPower)
+            if (dashPower)
             {
                 dashPower = false;
             }
@@ -65,9 +51,9 @@ public class MoveControls : MonoBehaviour {
         }
 
         //Jump Power
-        if(!dashPower)
+        if (!dashPower)
         {
-            jump = 30;
+            jump = 40;
         }
         else
         {
@@ -114,7 +100,7 @@ public class MoveControls : MonoBehaviour {
         {
             verticalVelocity = 0;
 
-            if(Input.GetAxis("Horizontal") == -1) //Going Left
+            if (Input.GetAxis("Horizontal") == -1) //Going Left
             {
                 transform.forward = new Vector3(-1, 0, 0);
                 facingRight = false;
@@ -130,71 +116,18 @@ public class MoveControls : MonoBehaviour {
                 verticalVelocity = jump;
             }
         }
-        else if(!dashing)
+        else if (!dashing)
         {
             verticalVelocity -= gravity; //Gravity Stuff
-        }
-
-        if (haveCoin)
-        {
-            if (Input.GetKey(KeyCode.Q))
-            {
-                throwCoin();
-            }
-        }
-        else
-        {
-            coinCooldown += Time.deltaTime;
-
-            if(coinCooldown > coinCooldownMax)
-            {
-                haveCoin = true;
-            }
         }
 
         moveVector = new Vector3(inputDirection, verticalVelocity, 0);
         controller.Move(moveVector * Time.deltaTime);
     }
 
-    void OnTriggerEnter(Collider other)
+    void OnCollisionEnter(Collision collision)
     {
-        if (other.tag == "Enemy")
-        {
-            dead = true;
-        }
-    }
-
-    public bool getDirection()
-    {
-        return facingRight;
-    }
-
-    void throwCoin()
-    {
-
-        if (haveCoin)
-        {
-            Vector3 coinVec = gameObject.transform.position;
-            Quaternion coinRot = gameObject.transform.rotation;
-
-            if (facingRight)
-            {
-                coinVec.x += 1.5f;
-            }else
-            {
-                coinVec.x -= 1.5f;
-            }
-            
-
-            Instantiate(coin, coinVec, coinRot);
-
-            coinCooldown = 0;
-            haveCoin = false;
-        } else
-        {
-
-        }
-
-        
+        Debug.Log(collision.gameObject.name);
     }
 }
+

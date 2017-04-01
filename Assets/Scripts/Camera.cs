@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Sidescroller_Camera : MonoBehaviour {
+public class Camera : MonoBehaviour {
 
     public Transform target;
     public float cameraSpeed = 10;
