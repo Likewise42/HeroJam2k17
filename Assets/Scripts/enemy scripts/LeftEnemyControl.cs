@@ -40,4 +40,11 @@ public class LeftEnemyControl : MonoBehaviour {
     void changeDirection () {
         direction = direction * -1;
     }
+    void OnTriggerEnter(Collider other) {
+        Debug.Log("collide");
+        if (other.tag == "enemyChange") {
+            changeDirection();
+        }
+    }
+
 }
