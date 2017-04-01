@@ -9,9 +9,11 @@ public class CoinFlipBehavior : MonoBehaviour {
     public GameObject coinSideB;
     public GameObject noCoin;
     private bool SideAactive = true;
+    private bool lostCoin = false;
+    private float time = 0;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
 		
 	}
 	
@@ -26,6 +28,30 @@ public class CoinFlipBehavior : MonoBehaviour {
         if (Input.GetKeyUp(KeyCode.Escape))
         {
             SceneManager.LoadScene("Pause");
+        }
+        if (Input.GetKeyUp(KeyCode.Y))
+        {
+            lostCoin = true;
+        }
+        if (lostCoin)
+        {
+            time += Time.deltaTime;
+            if (time > 5)
+            {
+                lostCoin = false;
+                time = 0;
+                coinSideA.SetActive(true);
+                coinSideB.SetActive(false);
+                noCoin.SetActive(false);
+                SideAactive = true;
+            }
+            else
+            {
+                coinSideA.SetActive(false);
+                coinSideB.SetActive(false);
+                noCoin.SetActive(true);
+            }
+        
         }
     }
 }
