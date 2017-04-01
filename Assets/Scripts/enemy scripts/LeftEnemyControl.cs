@@ -41,9 +41,16 @@ public class LeftEnemyControl : MonoBehaviour {
         direction = direction * -1;
     }
     void OnTriggerEnter(Collider other) {
-        Debug.Log("collide");
+
+        
+
         if (other.tag == "enemyChange") {
             changeDirection();
+        }
+
+        if(other.tag == "coin")
+        {
+            Destroy(gameObject);
         }
     }
 
