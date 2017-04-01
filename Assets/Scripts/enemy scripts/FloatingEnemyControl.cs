@@ -19,7 +19,7 @@ public class FloatingEnemyControl : MonoBehaviour {
         controller = GetComponent<CharacterController>();
         gravity = 2.0f;
         startY = transform.position.y;
-        topY = startY + 2;
+        topY = startY + .5f;
         verticalVelocity = gravity;
     }
 
