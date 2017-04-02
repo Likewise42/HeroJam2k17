@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class endGame : MonoBehaviour
 {
@@ -29,7 +30,7 @@ public class endGame : MonoBehaviour
 
         if (gameManagerScript.heroPoints >= gameManagerScript.requiredHeroPoints)
         {
-            gameOver = true;
+            SceneManager.LoadScene("victoryScreen");
         }
     }
 
