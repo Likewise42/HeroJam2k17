@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 using System.Collections;
 
 public class MoveControls : MonoBehaviour {
@@ -24,6 +25,8 @@ public class MoveControls : MonoBehaviour {
     public GameObject coin;
     private Vector3 moveVector;
     private CharacterController controller;
+    private float time;
+    public GameObject particles;
 
 	// Use this for initialization
 	void Start () {
@@ -40,7 +43,6 @@ public class MoveControls : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-
         inputDirection = Input.GetAxis("Horizontal") * moveSpeed;
 
         if(inputDirection > 0)
@@ -152,8 +154,28 @@ public class MoveControls : MonoBehaviour {
             }
         }
 
-        moveVector = new Vector3(inputDirection, verticalVelocity, 0);
-        controller.Move(moveVector * Time.deltaTime);
+        if (!dead)
+        {
+            moveVector = new Vector3(inputDirection, verticalVelocity, 0);
+            controller.Move(moveVector * Time.deltaTime);
+        }
+
+
+        if (dead && (time < 3))
+        {
+            transform.FindChild("Capsule").GetComponent<Renderer>().enabled = false;
+            particles.transform.position = transform.position;
+            particles.SetActive(true);
+            time += Time.deltaTime;
+            if (time > 0.5)
+            {
+                particles.SetActive(false);
+            }
+            if (time > 3)
+            {
+                SceneManager.LoadScene("gameOver", LoadSceneMode.Additive);
+            }
+        }
     }
 
     void OnTriggerEnter(Collider other)
