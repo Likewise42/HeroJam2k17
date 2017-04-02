@@ -19,6 +19,6 @@ public class resumeScript : MonoBehaviour, IPointerClickHandler
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        SceneManager.LoadScene("coinUI");
+        SceneManager.LoadScene("main");
     }
 }

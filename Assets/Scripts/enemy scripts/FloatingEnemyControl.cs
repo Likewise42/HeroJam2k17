@@ -11,6 +11,9 @@ public class FloatingEnemyControl : MonoBehaviour {
     private float startY;
     private float topY;
 
+    public GameObject gameManager;
+    public gmScript gameManagerScript;
+
     private Vector3 moveVector;
     private CharacterController controller;
 
@@ -21,6 +24,9 @@ public class FloatingEnemyControl : MonoBehaviour {
         startY = transform.position.y;
         topY = startY + .5f;
         verticalVelocity = gravity;
+
+        gameManager = GameObject.FindGameObjectWithTag("gameManager");
+        gameManagerScript = (gmScript)gameManager.GetComponent<gmScript>();
     }
 
     // Update is called once per frame
@@ -41,6 +47,7 @@ public class FloatingEnemyControl : MonoBehaviour {
     {
         if (other.tag == "coin")
         {
+            gameManagerScript.heroPoints += 100;
             Destroy(gameObject);
         }
     }
