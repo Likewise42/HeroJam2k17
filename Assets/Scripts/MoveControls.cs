@@ -173,6 +173,7 @@ public class MoveControls : MonoBehaviour {
             }
             if (time > 3)
             {
+                SceneManager.UnloadSceneAsync("coinUI");
                 SceneManager.LoadScene("gameOver", LoadSceneMode.Additive);
             }
         }
