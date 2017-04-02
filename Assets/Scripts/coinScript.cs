@@ -9,7 +9,7 @@ public class coinScript : MonoBehaviour {
     public float moveForwardTimer;
     public bool moveForward;
     public float coinSpeed;
-    private bool direction;
+    public bool direction;
     private Vector3 moveVector;
     private CharacterController controller;
 
@@ -17,7 +17,9 @@ public class coinScript : MonoBehaviour {
     void Start () {
         moveForward = true;
         playerObject = GameObject.FindGameObjectWithTag("Player");
+        Debug.Log(playerObject);
         playerMoveScript = (MoveControls) playerObject.GetComponent("MoveControls");
+        Debug.Log(playerMoveScript);
         direction = playerMoveScript.getDirection();
         controller = GetComponent<CharacterController>();
     }
