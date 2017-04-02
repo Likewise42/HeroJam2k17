@@ -1,0 +1,465 @@
+fileFormatVersion: 2
+guid: a523738b691ca244597794d4bdce5342
+timeCreated: 1491142579
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Main_Character_Test_4:Base
+    100004: Main_Character_Test_4:Left_Ankle
+    100006: Main_Character_Test_4:Left_Elbow
+    100008: Main_Character_Test_4:Left_Foot
+    100010: Main_Character_Test_4:Left_Hip
+    100012: Main_Character_Test_4:Left_Knee
+    100014: Main_Character_Test_4:Left_Shoulder
+    100016: Main_Character_Test_4:Left_Wrist
+    100018: Main_Character_Test_4:LizCharacter_Final_03_low:Liz_low
+    100020: Main_Character_Test_4:LizCharacter_Final_03_low:Liz_low_MeshPart0
+    100022: Main_Character_Test_4:LizCharacter_Final_03_low:Liz_low_MeshPart1
+    100024: Main_Character_Test_4:Neck
+    100026: Main_Character_Test_4:Right_Ankle
+    100028: Main_Character_Test_4:Right_Foot
+    100030: Main_Character_Test_4:Right_Hip
+    100032: Main_Character_Test_4:Right_Knee
+    100034: Main_Character_Test_4:Spine_1
+    100036: Main_Character_Test_4:Spine_2
+    100038: Main_Character_Test_4:Top_of_Head
+    400000: //RootNode
+    400002: Main_Character_Test_4:Base
+    400004: Main_Character_Test_4:Left_Ankle
+    400006: Main_Character_Test_4:Left_Elbow
+    400008: Main_Character_Test_4:Left_Foot
+    400010: Main_Character_Test_4:Left_Hip
+    400012: Main_Character_Test_4:Left_Knee
+    400014: Main_Character_Test_4:Left_Shoulder
+    400016: Main_Character_Test_4:Left_Wrist
+    400018: Main_Character_Test_4:LizCharacter_Final_03_low:Liz_low
+    400020: Main_Character_Test_4:LizCharacter_Final_03_low:Liz_low_MeshPart0
+    400022: Main_Character_Test_4:LizCharacter_Final_03_low:Liz_low_MeshPart1
+    400024: Main_Character_Test_4:Neck
+    400026: Main_Character_Test_4:Right_Ankle
+    400028: Main_Character_Test_4:Right_Foot
+    400030: Main_Character_Test_4:Right_Hip
+    400032: Main_Character_Test_4:Right_Knee
+    400034: Main_Character_Test_4:Spine_1
+    400036: Main_Character_Test_4:Spine_2
+    400038: Main_Character_Test_4:Top_of_Head
+    4300000: Main_Character_Test_4:LizCharacter_Final_03_low:Liz_low_MeshPart0
+    4300002: Main_Character_Test_4:LizCharacter_Final_03_low:Liz_low_MeshPart1
+    7400000: Run
+    7400002: Dash
+    7400004: Jump
+    7400006: Throw
+    7400008: Idle
+    9500000: //RootNode
+    13700000: Main_Character_Test_4:LizCharacter_Final_03_low:Liz_low_MeshPart0
+    13700002: Main_Character_Test_4:LizCharacter_Final_03_low:Liz_low_MeshPart1
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Run
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 28
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Main_Character_Test_4:Base
+        weight: 1
+      - path: Main_Character_Test_4:Base/Main_Character_Test_4:Left_Hip
+        weight: 1
+      - path: Main_Character_Test_4:Base/Main_Character_Test_4:Left_Hip/Main_Character_Test_4:Left_Knee
+        weight: 1
+      - path: Main_Character_Test_4:Base/Main_Character_Test_4:Left_Hip/Main_Character_Test_4:Left_Knee/Main_Character_Test_4:Left_Ankle
+        weight: 1
+      - path: Main_Character_Test_4:Base/Main_Character_Test_4:Left_Hip/Main_Character_Test_4:Left_Knee/Main_Character_Test_4:Left_Ankle/Main_Character_Test_4:Left_Foot
+        weight: 1
+      - path: Main_Character_Test_4:Base/Main_Character_Test_4:Right_Hip
+        weight: 1
+      - path: Main_Character_Test_4:Base/Main_Character_Test_4:Right_Hip/Main_Character_Test_4:Right_Knee
+        weight: 1
+      - path: Main_Character_Test_4:Base/Main_Character_Test_4:Right_Hip/Main_Character_Test_4:Right_Knee/Main_Character_Test_4:Right_Ankle
+        weight: 1
+      - path: Main_Character_Test_4:Base/Main_Character_Test_4:Right_Hip/Main_Character_Test_4:Right_Knee/Main_Character_Test_4:Right_Ankle/Main_Character_Test_4:Right_Foot
+        weight: 1
+      - path: Main_Character_Test_4:Base/Main_Character_Test_4:Spine_1
+        weight: 1
+      - path: Main_Character_Test_4:Base/Main_Character_Test_4:Spine_1/Main_Character_Test_4:Spine_2
+        weight: 1
+      - path: Main_Character_Test_4:Base/Main_Character_Test_4:Spine_1/Main_Character_Test_4:Spine_2/Main_Character_Test_4:Left_Shoulder
+        weight: 1
+      - path: Main_Character_Test_4:Base/Main_Character_Test_4:Spine_1/Main_Character_Test_4:Spine_2/Main_Character_Test_4:Left_Shoulder/Main_Character_Test_4:Left_Elbow
+        weight: 1
+      - path: Main_Character_Test_4:Base/Main_Character_Test_4:Spine_1/Main_Character_Test_4:Spine_2/Main_Character_Test_4:Left_Shoulder/Main_Character_Test_4:Left_Elbow/Main_Character_Test_4:Left_Wrist
+        weight: 1
+      - path: Main_Character_Test_4:Base/Main_Character_Test_4:Spine_1/Main_Character_Test_4:Spine_2/Main_Character_Test_4:Neck
+        weight: 1
+      - path: Main_Character_Test_4:Base/Main_Character_Test_4:Spine_1/Main_Character_Test_4:Spine_2/Main_Character_Test_4:Neck/Main_Character_Test_4:Top_of_Head
+        weight: 1
+      - path: Main_Character_Test_4:LizCharacter_Final_03_low:Liz_low
+        weight: 1
+      - path: Main_Character_Test_4:LizCharacter_Final_03_low:Liz_low/Main_Character_Test_4:LizCharacter_Final_03_low:Liz_low_MeshPart0
+        weight: 1
+      - path: Main_Character_Test_4:LizCharacter_Final_03_low:Liz_low/Main_Character_Test_4:LizCharacter_Final_03_low:Liz_low_MeshPart1
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Dash
+      takeName: Take 001
+      firstFrame: 35
+      lastFrame: 70
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Main_Character_Test_4:Base
+        weight: 1
+      - path: Main_Character_Test_4:Base/Main_Character_Test_4:Left_Hip
+        weight: 1
+      - path: Main_Character_Test_4:Base/Main_Character_Test_4:Left_Hip/Main_Character_Test_4:Left_Knee
+        weight: 1
+      - path: Main_Character_Test_4:Base/Main_Character_Test_4:Left_Hip/Main_Character_Test_4:Left_Knee/Main_Character_Test_4:Left_Ankle
+        weight: 1
+      - path: Main_Character_Test_4:Base/Main_Character_Test_4:Left_Hip/Main_Character_Test_4:Left_Knee/Main_Character_Test_4:Left_Ankle/Main_Character_Test_4:Left_Foot
+        weight: 1
+      - path: Main_Character_Test_4:Base/Main_Character_Test_4:Right_Hip
+        weight: 1
+      - path: Main_Character_Test_4:Base/Main_Character_Test_4:Right_Hip/Main_Character_Test_4:Right_Knee
+        weight: 1
+      - path: Main_Character_Test_4:Base/Main_Character_Test_4:Right_Hip/Main_Character_Test_4:Right_Knee/Main_Character_Test_4:Right_Ankle
+        weight: 1
+      - path: Main_Character_Test_4:Base/Main_Character_Test_4:Right_Hip/Main_Character_Test_4:Right_Knee/Main_Character_Test_4:Right_Ankle/Main_Character_Test_4:Right_Foot
+        weight: 1
+      - path: Main_Character_Test_4:Base/Main_Character_Test_4:Spine_1
+        weight: 1
+      - path: Main_Character_Test_4:Base/Main_Character_Test_4:Spine_1/Main_Character_Test_4:Spine_2
+        weight: 1
+      - path: Main_Character_Test_4:Base/Main_Character_Test_4:Spine_1/Main_Character_Test_4:Spine_2/Main_Character_Test_4:Left_Shoulder
+        weight: 1
+      - path: Main_Character_Test_4:Base/Main_Character_Test_4:Spine_1/Main_Character_Test_4:Spine_2/Main_Character_Test_4:Left_Shoulder/Main_Character_Test_4:Left_Elbow
+        weight: 1
+      - path: Main_Character_Test_4:Base/Main_Character_Test_4:Spine_1/Main_Character_Test_4:Spine_2/Main_Character_Test_4:Left_Shoulder/Main_Character_Test_4:Left_Elbow/Main_Character_Test_4:Left_Wrist
+        weight: 1
+      - path: Main_Character_Test_4:Base/Main_Character_Test_4:Spine_1/Main_Character_Test_4:Spine_2/Main_Character_Test_4:Neck
+        weight: 1
+      - path: Main_Character_Test_4:Base/Main_Character_Test_4:Spine_1/Main_Character_Test_4:Spine_2/Main_Character_Test_4:Neck/Main_Character_Test_4:Top_of_Head
+        weight: 1
+      - path: Main_Character_Test_4:LizCharacter_Final_03_low:Liz_low
+        weight: 1
+      - path: Main_Character_Test_4:LizCharacter_Final_03_low:Liz_low/Main_Character_Test_4:LizCharacter_Final_03_low:Liz_low_MeshPart0
+        weight: 1
+      - path: Main_Character_Test_4:LizCharacter_Final_03_low:Liz_low/Main_Character_Test_4:LizCharacter_Final_03_low:Liz_low_MeshPart1
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Jump
+      takeName: Take 001
+      firstFrame: 71
+      lastFrame: 130
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Main_Character_Test_4:Base
+        weight: 1
+      - path: Main_Character_Test_4:Base/Main_Character_Test_4:Left_Hip
+        weight: 1
+      - path: Main_Character_Test_4:Base/Main_Character_Test_4:Left_Hip/Main_Character_Test_4:Left_Knee
+        weight: 1
+      - path: Main_Character_Test_4:Base/Main_Character_Test_4:Left_Hip/Main_Character_Test_4:Left_Knee/Main_Character_Test_4:Left_Ankle
+        weight: 1
+      - path: Main_Character_Test_4:Base/Main_Character_Test_4:Left_Hip/Main_Character_Test_4:Left_Knee/Main_Character_Test_4:Left_Ankle/Main_Character_Test_4:Left_Foot
+        weight: 1
+      - path: Main_Character_Test_4:Base/Main_Character_Test_4:Right_Hip
+        weight: 1
+      - path: Main_Character_Test_4:Base/Main_Character_Test_4:Right_Hip/Main_Character_Test_4:Right_Knee
+        weight: 1
+      - path: Main_Character_Test_4:Base/Main_Character_Test_4:Right_Hip/Main_Character_Test_4:Right_Knee/Main_Character_Test_4:Right_Ankle
+        weight: 1
+      - path: Main_Character_Test_4:Base/Main_Character_Test_4:Right_Hip/Main_Character_Test_4:Right_Knee/Main_Character_Test_4:Right_Ankle/Main_Character_Test_4:Right_Foot
+        weight: 1
+      - path: Main_Character_Test_4:Base/Main_Character_Test_4:Spine_1
+        weight: 1
+      - path: Main_Character_Test_4:Base/Main_Character_Test_4:Spine_1/Main_Character_Test_4:Spine_2
+        weight: 1
+      - path: Main_Character_Test_4:Base/Main_Character_Test_4:Spine_1/Main_Character_Test_4:Spine_2/Main_Character_Test_4:Left_Shoulder
+        weight: 1
+      - path: Main_Character_Test_4:Base/Main_Character_Test_4:Spine_1/Main_Character_Test_4:Spine_2/Main_Character_Test_4:Left_Shoulder/Main_Character_Test_4:Left_Elbow
+        weight: 1
+      - path: Main_Character_Test_4:Base/Main_Character_Test_4:Spine_1/Main_Character_Test_4:Spine_2/Main_Character_Test_4:Left_Shoulder/Main_Character_Test_4:Left_Elbow/Main_Character_Test_4:Left_Wrist
+        weight: 1
+      - path: Main_Character_Test_4:Base/Main_Character_Test_4:Spine_1/Main_Character_Test_4:Spine_2/Main_Character_Test_4:Neck
+        weight: 1
+      - path: Main_Character_Test_4:Base/Main_Character_Test_4:Spine_1/Main_Character_Test_4:Spine_2/Main_Character_Test_4:Neck/Main_Character_Test_4:Top_of_Head
+        weight: 1
+      - path: Main_Character_Test_4:LizCharacter_Final_03_low:Liz_low
+        weight: 1
+      - path: Main_Character_Test_4:LizCharacter_Final_03_low:Liz_low/Main_Character_Test_4:LizCharacter_Final_03_low:Liz_low_MeshPart0
+        weight: 1
+      - path: Main_Character_Test_4:LizCharacter_Final_03_low:Liz_low/Main_Character_Test_4:LizCharacter_Final_03_low:Liz_low_MeshPart1
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Throw
+      takeName: Take 001
+      firstFrame: 134
+      lastFrame: 171
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Main_Character_Test_4:Base
+        weight: 1
+      - path: Main_Character_Test_4:Base/Main_Character_Test_4:Left_Hip
+        weight: 1
+      - path: Main_Character_Test_4:Base/Main_Character_Test_4:Left_Hip/Main_Character_Test_4:Left_Knee
+        weight: 1
+      - path: Main_Character_Test_4:Base/Main_Character_Test_4:Left_Hip/Main_Character_Test_4:Left_Knee/Main_Character_Test_4:Left_Ankle
+        weight: 1
+      - path: Main_Character_Test_4:Base/Main_Character_Test_4:Left_Hip/Main_Character_Test_4:Left_Knee/Main_Character_Test_4:Left_Ankle/Main_Character_Test_4:Left_Foot
+        weight: 1
+      - path: Main_Character_Test_4:Base/Main_Character_Test_4:Right_Hip
+        weight: 1
+      - path: Main_Character_Test_4:Base/Main_Character_Test_4:Right_Hip/Main_Character_Test_4:Right_Knee
+        weight: 1
+      - path: Main_Character_Test_4:Base/Main_Character_Test_4:Right_Hip/Main_Character_Test_4:Right_Knee/Main_Character_Test_4:Right_Ankle
+        weight: 1
+      - path: Main_Character_Test_4:Base/Main_Character_Test_4:Right_Hip/Main_Character_Test_4:Right_Knee/Main_Character_Test_4:Right_Ankle/Main_Character_Test_4:Right_Foot
+        weight: 1
+      - path: Main_Character_Test_4:Base/Main_Character_Test_4:Spine_1
+        weight: 1
+      - path: Main_Character_Test_4:Base/Main_Character_Test_4:Spine_1/Main_Character_Test_4:Spine_2
+        weight: 1
+      - path: Main_Character_Test_4:Base/Main_Character_Test_4:Spine_1/Main_Character_Test_4:Spine_2/Main_Character_Test_4:Left_Shoulder
+        weight: 1
+      - path: Main_Character_Test_4:Base/Main_Character_Test_4:Spine_1/Main_Character_Test_4:Spine_2/Main_Character_Test_4:Left_Shoulder/Main_Character_Test_4:Left_Elbow
+        weight: 1
+      - path: Main_Character_Test_4:Base/Main_Character_Test_4:Spine_1/Main_Character_Test_4:Spine_2/Main_Character_Test_4:Left_Shoulder/Main_Character_Test_4:Left_Elbow/Main_Character_Test_4:Left_Wrist
+        weight: 1
+      - path: Main_Character_Test_4:Base/Main_Character_Test_4:Spine_1/Main_Character_Test_4:Spine_2/Main_Character_Test_4:Neck
+        weight: 1
+      - path: Main_Character_Test_4:Base/Main_Character_Test_4:Spine_1/Main_Character_Test_4:Spine_2/Main_Character_Test_4:Neck/Main_Character_Test_4:Top_of_Head
+        weight: 1
+      - path: Main_Character_Test_4:LizCharacter_Final_03_low:Liz_low
+        weight: 1
+      - path: Main_Character_Test_4:LizCharacter_Final_03_low:Liz_low/Main_Character_Test_4:LizCharacter_Final_03_low:Liz_low_MeshPart0
+        weight: 1
+      - path: Main_Character_Test_4:LizCharacter_Final_03_low:Liz_low/Main_Character_Test_4:LizCharacter_Final_03_low:Liz_low_MeshPart1
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Idle
+      takeName: Take 001
+      firstFrame: 175
+      lastFrame: 199
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Main_Character_Test_4:Base
+        weight: 1
+      - path: Main_Character_Test_4:Base/Main_Character_Test_4:Left_Hip
+        weight: 1
+      - path: Main_Character_Test_4:Base/Main_Character_Test_4:Left_Hip/Main_Character_Test_4:Left_Knee
+        weight: 1
+      - path: Main_Character_Test_4:Base/Main_Character_Test_4:Left_Hip/Main_Character_Test_4:Left_Knee/Main_Character_Test_4:Left_Ankle
+        weight: 1
+      - path: Main_Character_Test_4:Base/Main_Character_Test_4:Left_Hip/Main_Character_Test_4:Left_Knee/Main_Character_Test_4:Left_Ankle/Main_Character_Test_4:Left_Foot
+        weight: 1
+      - path: Main_Character_Test_4:Base/Main_Character_Test_4:Right_Hip
+        weight: 1
+      - path: Main_Character_Test_4:Base/Main_Character_Test_4:Right_Hip/Main_Character_Test_4:Right_Knee
+        weight: 1
+      - path: Main_Character_Test_4:Base/Main_Character_Test_4:Right_Hip/Main_Character_Test_4:Right_Knee/Main_Character_Test_4:Right_Ankle
+        weight: 1
+      - path: Main_Character_Test_4:Base/Main_Character_Test_4:Right_Hip/Main_Character_Test_4:Right_Knee/Main_Character_Test_4:Right_Ankle/Main_Character_Test_4:Right_Foot
+        weight: 1
+      - path: Main_Character_Test_4:Base/Main_Character_Test_4:Spine_1
+        weight: 1
+      - path: Main_Character_Test_4:Base/Main_Character_Test_4:Spine_1/Main_Character_Test_4:Spine_2
+        weight: 1
+      - path: Main_Character_Test_4:Base/Main_Character_Test_4:Spine_1/Main_Character_Test_4:Spine_2/Main_Character_Test_4:Left_Shoulder
+        weight: 1
+      - path: Main_Character_Test_4:Base/Main_Character_Test_4:Spine_1/Main_Character_Test_4:Spine_2/Main_Character_Test_4:Left_Shoulder/Main_Character_Test_4:Left_Elbow
+        weight: 1
+      - path: Main_Character_Test_4:Base/Main_Character_Test_4:Spine_1/Main_Character_Test_4:Spine_2/Main_Character_Test_4:Left_Shoulder/Main_Character_Test_4:Left_Elbow/Main_Character_Test_4:Left_Wrist
+        weight: 1
+      - path: Main_Character_Test_4:Base/Main_Character_Test_4:Spine_1/Main_Character_Test_4:Spine_2/Main_Character_Test_4:Neck
+        weight: 1
+      - path: Main_Character_Test_4:Base/Main_Character_Test_4:Spine_1/Main_Character_Test_4:Spine_2/Main_Character_Test_4:Neck/Main_Character_Test_4:Top_of_Head
+        weight: 1
+      - path: Main_Character_Test_4:LizCharacter_Final_03_low:Liz_low
+        weight: 1
+      - path: Main_Character_Test_4:LizCharacter_Final_03_low:Liz_low/Main_Character_Test_4:LizCharacter_Final_03_low:Liz_low_MeshPart0
+        weight: 1
+      - path: Main_Character_Test_4:LizCharacter_Final_03_low:Liz_low/Main_Character_Test_4:LizCharacter_Final_03_low:Liz_low_MeshPart1
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
