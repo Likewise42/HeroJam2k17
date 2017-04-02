@@ -46,7 +46,7 @@ public class MoveControls : MonoBehaviour {
         if(inputDirection > 0)
         {
             facingRight = true;
-        }else
+        }else if(inputDirection < 0)
         {
             facingRight = false;
         }
