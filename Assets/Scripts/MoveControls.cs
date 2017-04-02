@@ -112,7 +112,7 @@ public class MoveControls : MonoBehaviour {
             if (dashing) //The Dash lasts for a certain amount of time
             {
                 animator.SetTrigger(dashHash);
-                inputDirection *= 7.5f;
+                inputDirection *= 4.5f;
                 dashingTimer += Time.deltaTime;
                 dashReady = false;
             }
@@ -206,6 +206,7 @@ public class MoveControls : MonoBehaviour {
 
     void OnTriggerEnter(Collider other)
     {
+        Debug.Log("hit");
         if (other.tag == "Enemy")
         {
             dead = true;
