@@ -27,7 +27,7 @@ public class resumeScript : MonoBehaviour, IPointerClickHandler
         }
         else
         {
-            SceneManager.LoadScene("main");
+            SceneManager.LoadScene("Level");
         }
     }
 }
