@@ -28,6 +28,17 @@ public class MoveControls : MonoBehaviour {
     private float time;
     public GameObject particles;
 
+    public Animator animator;
+    public AnimatorControllerParameter Acontroller;
+
+    private int dashHash;
+    private int throwHash;
+    private int runHash;
+    private int jumpHash;
+    private int idleHash;
+    private int entryHash;
+
+
 	// Use this for initialization
 	void Start () {
         controller = GetComponent<CharacterController>();
@@ -39,11 +50,24 @@ public class MoveControls : MonoBehaviour {
         dashReplenish = false;
         dashPower = true;
         haveCoin = true;
+
+        animator = (Animator) GetComponent<Animator>();
+
+        dashHash = Animator.StringToHash("Dash");
+        throwHash = Animator.StringToHash("Throwing");
+        runHash = Animator.StringToHash("Running");
+        jumpHash = Animator.StringToHash("Jump");
+        idleHash = Animator.StringToHash("Idle");
+        entryHash = Animator.StringToHash("Entry");
+
+        animator.SetTrigger("GO");
     }
 	
 	// Update is called once per frame
 	void Update () {
         inputDirection = Input.GetAxis("Horizontal") * moveSpeed;
+
+        //animator.SetFloat("Speed", inputDirection);
 
         if(inputDirection > 0)
         {
@@ -87,6 +111,7 @@ public class MoveControls : MonoBehaviour {
 
             if (dashing) //The Dash lasts for a certain amount of time
             {
+                animator.SetTrigger(dashHash);
                 inputDirection *= 7.5f;
                 dashingTimer += Time.deltaTime;
                 dashReady = false;
@@ -163,7 +188,7 @@ public class MoveControls : MonoBehaviour {
 
         if (dead && (time < 3))
         {
-            transform.FindChild("Capsule").GetComponent<Renderer>().enabled = false;
+            transform.FindChild("Main_Character_Test_4:LizCharacter_Final_03_low:Liz_low").gameObject.SetActive(false);
             particles.transform.position = transform.position;
             particles.SetActive(true);
             time += Time.deltaTime;
