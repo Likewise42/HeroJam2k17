@@ -25,9 +25,11 @@ public class CoinFlipBehavior : MonoBehaviour {
             coinSideA.SetActive(SideAactive);
             coinSideB.SetActive(!SideAactive);
         }
-        if (Input.GetKeyUp(KeyCode.Escape))
+        if (Input.GetKeyUp(KeyCode.Escape) && !SceneManager.GetSceneByName("gameOver").isLoaded)
         {
-            SceneManager.LoadScene("Pause");
+            SceneManager.UnloadSceneAsync("coinUI");
+            SceneManager.LoadScene("Pause", LoadSceneMode.Additive);
+            Time.timeScale = 0;
         }
         if (Input.GetKeyUp(KeyCode.Y))
         {
